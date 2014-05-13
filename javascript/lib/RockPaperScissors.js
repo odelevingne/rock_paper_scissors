@@ -8,7 +8,7 @@ Player.prototype.picks = function(pick) {
 };
 
 Player.prototype.reveal = function() {
-	return this.pick;
+  return this.pick;
 };
 
 function Game(player1, player2) {

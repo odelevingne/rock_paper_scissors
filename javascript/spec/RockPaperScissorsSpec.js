@@ -3,8 +3,8 @@ describe("Rock-Paper-Scissors", function() {
   
   beforeEach(function() {
 
-    player1 = new Player('Alex');
-    player2 = new Player('Tony');
+    player1 = new Player('Steve');
+    player2 = new Player('Ollie');
     game = new Game(player1, player2);
 
   });
@@ -209,5 +209,16 @@ describe("Rock-Paper-Scissors", function() {
     });
 
   });
+
+  describe('victory messages', function() {
+
+    it("should return the winner's name, the verb, and the losers name", function() {
+
+        player1.picks('scissors');
+        player2.picks('rock');
+        expect(game.winningMessage()).toEqual('Ollie crushes Steve')
+
+    })
+  })
 
 });
