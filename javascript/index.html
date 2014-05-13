@@ -48,22 +48,21 @@
       <img src="images/lizard.png" data-pick='lizard'>
       <img src="images/spock.png" data-pick='spock'>
     </div>
-    <ul id="results">
-    </ul>
+    <ul id="results"></ul>
 
     <script src='lib/Game.js'></script>
+    <script src='lib/Player.js'></script>
     <script src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
     <script>
       $(document).ready(function(){
-        var alex = new Player('Alex');
-        var tony = new Player('Tony');
-        var game = new Game(alex, tony)
+        var you = new Player('you');
+        var computer= new Player('computer');
+        var game = new Game(you, computer)
 
         $('.choices img').on('click', function(){
-          alex.picks($(this).data('pick'));
-          tony.picks('rock');
-
-          $('#results li').append('<li>' + game.winningMessage() + '</li>');
+          you.picks($(this).data('pick'));
+          computer.randomChoice();
+          $('#results').prepend('<li>' + game.winningMessage() + '</li>');
         })
       })
     </script>
