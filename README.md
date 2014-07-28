@@ -1,6 +1,7 @@
 Rock, Paper, Scissors, Lizard, Spock
 ===
 
+As a part of week 7 at [Makers Academy], we were given the task to implement the [Rock, Paper, Scissors, Lizard, Spock] game in Javascript.
 
 ![](javascript/images/screenshot.png)
 
@@ -31,3 +32,8 @@ How to run tests
 cd javascript
 open SpecRunner.html
 ```
+
+
+
+[Makers Academy]:http://www.makersacademy.com
+[Rock, Paper, Scissors, Lizard, Spock]:http://en.wikipedia.org/wiki/Rock-paper-scissors-lizard-Spock
