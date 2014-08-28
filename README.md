@@ -6,7 +6,7 @@ As a part of week 7 at [Makers Academy], we were given the task to implement the
 ![](javascript/images/screenshot.png)
 
 
-Learning objectives of exercise
+Learning objectives of the exercise
 ----
 Basic Javascript, Jquery and Jasmine
 
